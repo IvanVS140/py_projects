@@ -1,15 +1,18 @@
 """dictionary assistant. converts an arbitrary string into a normalized
 dictionary"""
 
-SPAM = "бензин горит температура 35.5678 1 первый 2.1234 2-ой 3.0"  # odd
-print('{}\n{}\n'.format('Source string:', SPAM))
+SPAM = "petrol burns temperature 35.5678 1 first 2.1234 2nd 3.0"  # odd example
+print('\n{}:\n{}\n'.format('Source string', SPAM))
 
 
 def make_dict(string):
-    """
-converts an arbitrary string into a non-normalized dictionary
-    :param string: arbitrary string
-    :return: non-normalized dictionary
+    """[converts an arbitrary string into a non-normalized dictionary]
+
+    Args:
+        string ([str]): [arbitrary string]
+
+    Returns:
+        [dict]: [non-normalized dictionary]
     """
     new_list = string.split()
     dictionary = {}
@@ -24,10 +27,13 @@ converts an arbitrary string into a non-normalized dictionary
 
 
 def is_digit(string):
-    """
-checks if a string-type item represented by a digit
-    :param string: string-type item to check
-    :return: True if a digit, and False if not
+    """[checks if a string-type item represented by a digit]
+
+    Args:
+        string ([str]): [string-type item to check]
+
+    Returns:
+        [bool]: [True if a digit, and False if not]
     """
     if string is None:
         return False
@@ -41,11 +47,14 @@ checks if a string-type item represented by a digit
 
 
 def normalize_dict(dictionary):
-    """
-if the key or its value represented by numbers - converts them into a float
-with subsequent rounding
-    :param dictionary: non-normalized dictionary
-    :return: normalized dictionary
+    """[if the key or its value represented by numbers - converts them into a
+    float with subsequent rounding]
+
+    Args:
+        dictionary ([dict]): [non-normalized dictionary]
+
+    Returns:
+        [dict]: [normalized dictionary]
     """
     (key_round, value_round) = (0, 2)  # rounding values. If the key is
     # rounded to "0" characters, then it will be represented by an integer
@@ -66,4 +75,5 @@ with subsequent rounding
     return normalized_dict
 
 
-print('{}\n{}'.format('Output:', (normalize_dict(make_dict(SPAM)))))
+if __name__ == '__main__':
+    print('{}:\n{}\n'.format('Output', (normalize_dict(make_dict(SPAM)))))

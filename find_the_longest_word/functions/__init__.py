@@ -1,3 +1,0 @@
-"""docstring here"""
-
-NAME = 'functions'
