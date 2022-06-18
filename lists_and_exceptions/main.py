@@ -49,11 +49,11 @@ print(MOD_LIST_TEMPLATE.format(
 print(MOD_LIST_TEMPLATE.format(
     'Сумма элементов текущего списка:', round(sum(NUMS), 0)))
 
-new_index = normalize_index(int(round(verify_input(input(
+NEW_INDEX = normalize_index(int(round(verify_input(input(
     '\nВведите индекс нового элемента: ')), 0)))
-new_num = round(verify_input(input('Введите значение нового элемента: ')), 1)
+NEW_NUM = round(verify_input(input('Введите значение нового элемента: ')), 1)
 
-NUMS.insert(new_index, new_num)
+NUMS.insert(NEW_INDEX, NEW_NUM)
 
 print(LIST_TEMPLATE.format(
     'Новый список:', NUMS, '(добавленный элемент округлён)'))
