@@ -27,7 +27,7 @@ def separate(string, symbol):
 
 
 if __name__ == '__main__':
-    sep_symbol = str(input("Enter splitter symbol(s): "))
-    with open("../_source/eggs.txt") as f:
+    SEP_SYMBOL = str(input("Enter splitter symbol(s): "))
+    with open("_source/eggs.txt") as f:
         text = f.read()
-        print('\n{}\n{}\n'.format(text, separate(text, sep_symbol)))
+        print('\n{}\n{}\n'.format(text, separate(text, SEP_SYMBOL)))

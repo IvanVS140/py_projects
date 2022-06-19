@@ -3,7 +3,7 @@
 from string import ascii_letters
 
 
-with open("../_source/spam.txt") as f:
+with open("_source/spam.txt") as f:
     text = f.read()
     result = []
     for i in text.split():
