@@ -2,13 +2,13 @@
 
 
 def normalize_url(url):
-    """[converts any URLs into https-type]
+    """converts any URLs into https-type
 
     Args:
-        address ([str]): [any URL]
+        url (str): any URL
 
     Returns:
-        [str]: [converted URL]
+        str: https-type URL
     """
     pref = 'https://'
     if url[:4] == 'www.':
