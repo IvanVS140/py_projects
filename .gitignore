@@ -133,3 +133,4 @@ dmypy.json
 .vscode
 .gitignore
 _virtenv
+pew.py
