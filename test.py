@@ -1,1 +1,2 @@
-bad_dict = {(1, 2, 3): "one two three"}
+standard_input = 'hello world'
+print(input())
