@@ -132,5 +132,5 @@ dmypy.json
 .idea
 .vscode
 .gitignore
-_virtenv
-pew.py
+/_virtenv
+/pew.py
