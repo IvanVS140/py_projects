@@ -131,4 +131,5 @@ dmypy.json
 # custom
 .idea
 .vscode
-test.py
+.gitignore
+_virtenv
