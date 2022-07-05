@@ -11,10 +11,9 @@ while True:
     p2_rand = randint(0, 2)
     # print(p1_rand, p2_rand)
     if p1_rand == p2_rand:
-        print(TEMPLATE.format(
-            P1, game_list[p1_rand],
-            P2, game_list[p2_rand],
-            'draw..'))
+        print(TEMPLATE.format(P1, game_list[p1_rand],
+                              P2, game_list[p2_rand],
+                              'draw..'))
         continue
     if p1_rand - p2_rand == -1 or p1_rand - p2_rand == 2:
         print(TEMPLATE.format(P1, game_list[p1_rand],
